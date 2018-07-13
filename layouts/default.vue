@@ -3,7 +3,7 @@
 
     <nav class="navbar-default navbar-static-side" role="navigation">
       <div class="sidebar-collapse">
-        <my-sidebar></my-sidebar>
+        <sidebar-nx></sidebar-nx>
       </div>
     </nav>
 
@@ -43,16 +43,9 @@
             </li>
           </ol>
         </div>
-        <div class="col-sm-8">
-          <div class="title-action">
-            <a href="" class="btn btn-primary">This is action area</a>
-          </div>
-        </div>
       </div>
       <div class="wrapper wrapper-content animated fadeIn">
-        <div class="row">
-          <nuxt/>
-        </div>
+        <nuxt/>
       </div>
       <div class="footer">
         <div class="pull-right">10GB of <strong>250GB</strong> Free.
@@ -67,12 +60,10 @@
 </template>
 
 <script>
-  import Sidebar from '~/components/Sidebar.vue'
+  import SidebarNx from "../components/Sidebar";
 
   export default {
-    components: {
-      MySidebar: Sidebar
-    },
+    components: {SidebarNx},
     data() {
       return {
         query: null

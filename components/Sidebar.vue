@@ -26,6 +26,12 @@
   </ul>
 </template>
 
+<script>
+  export default {
+    name: "sidebar-nx"
+  }
+</script>
+
 <style>
 
 </style>
