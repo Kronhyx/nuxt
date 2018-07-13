@@ -49,7 +49,7 @@
           </div>
         </div>
       </div>
-      <div class="wrapper wrapper-content animated fadeInRight">
+      <div class="wrapper wrapper-content animated fadeIn">
         <div class="row">
           <nuxt/>
         </div>
