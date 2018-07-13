@@ -1,7 +1,11 @@
 <template>
+
   <ul class="nav metismenu" id="side-menu">
     <li class="nav-header">
       <div class="dropdown profile-element">
+        <span>
+          <img alt="image" class="img-circle" src="../assets/img/profile_small.jpg">
+        </span>
         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
           <span class="clear">
             <span class="block m-t-xs">

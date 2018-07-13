@@ -16,7 +16,8 @@
             </a>
             <form role="search" class="navbar-form-custom" method="post" action="#">
               <div class="form-group">
-                <input type="text" placeholder="Search for something..." class="form-control" id="top-search">
+                <input type="text" v-model="query" placeholder="Search for something..." class="form-control"
+                       id="top-search">
               </div>
             </form>
           </div>
@@ -71,6 +72,11 @@
   export default {
     components: {
       MySidebar: Sidebar
+    },
+    data() {
+      return {
+        query: null
+      }
     }
   }
 </script>
