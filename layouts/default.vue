@@ -3,39 +3,13 @@
 
     <nav class="navbar-default navbar-static-side" role="navigation">
       <div class="sidebar-collapse">
-        <ul class="nav metismenu" id="side-menu">
-          <li class="nav-header">
-            <div class="dropdown profile-element">
-              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                <span class="clear">
-                  <span class="block m-t-xs">
-                    <strong class="font-bold">David Williams</strong>
-                  </span>
-                  <span class="text-muted text-xs block">Art Director</span>
-                </span>
-              </a>
-            </div>
-            <div class="logo-element">IN+</div>
-          </li>
-          <li class="active">
-            <a href="index.html">
-              <i class="fa fa-th-large"></i>
-              <span class="nav-label">Main view</span>
-            </a>
-          </li>
-          <li>
-            <a href="minor.html">
-              <i class="fa fa-th-large"> </i>
-              <span class="nav-label">Minor view</span>
-            </a>
-          </li>
-        </ul>
+        <my-sidebar></my-sidebar>
       </div>
     </nav>
 
     <div id="page-wrapper" class="gray-bg">
       <div class="row border-bottom">
-        <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
           <div class="navbar-header">
             <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#">
               <i class="fa fa-bars"></i>
@@ -56,6 +30,24 @@
 
         </nav>
       </div>
+      <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-sm-4">
+          <h2>This is main title</h2>
+          <ol class="breadcrumb">
+            <li>
+              <a href="#">This is</a>
+            </li>
+            <li class="active">
+              <strong>Breadcrumb</strong>
+            </li>
+          </ol>
+        </div>
+        <div class="col-sm-8">
+          <div class="title-action">
+            <a href="" class="btn btn-primary">This is action area</a>
+          </div>
+        </div>
+      </div>
       <div class="wrapper wrapper-content animated fadeInRight">
         <div class="row">
           <nuxt/>
@@ -74,7 +66,13 @@
 </template>
 
 <script>
-  export default {}
+  import Sidebar from '~/components/Sidebar.vue'
+
+  export default {
+    components: {
+      MySidebar: Sidebar
+    }
+  }
 </script>
 
 <style>
