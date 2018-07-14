@@ -17,19 +17,22 @@
       </div>
       <div class="logo-element">IN+</div>
     </li>
-    <nuxt-link :tag="'li'" v-for="(item,key) in items" :key="key" :to="item.route">
+    <nuxt-link v-for="(item,key) in items" :key="key" :tag="'li'" :to="item.children?'':item.route" :activeClass="'active'">
       <a>
         <i :class="item.icon"></i>
         <span class="nav-label" v-text="item.text"></span>
         <span class="fa arrow" v-if="item.children"></span>
+        <span class="label pull-right" v-if="item.badge" :class="'label-'+item.badge.class">
+          {{ item.badge.text }}
+        </span>
       </a>
-      <!--<ul class="nav ntrisecond-level collapse" :class="{in: item.active}" v-if="item.children">-->
-        <!--<li v-for="(children, chKey) in item.children" :key="chKey">-->
-          <!--<nuxt-link v-text="children.text">-->
-            <!--<span class="label label-primary pull-right" v-text="children.badge"></span>-->
-          <!--</nuxt-link>-->
-        <!--</li>-->
-      <!--</ul>-->
+      <ul class="nav nav-second-level collapse" v-if="item.children">
+        <li v-for="(children, chKey) in item.children" :key="chKey">
+          <nuxt-link v-text="children.text" :to="children.route">
+            <span class="label label-primary pull-right" v-if="children.badge" v-text="children.badge"></span>
+          </nuxt-link>
+        </li>
+      </ul>
     </nuxt-link>
   </ul>
 </template>
@@ -43,35 +46,50 @@
           {
             icon: 'fa fa-th-large',
             text: 'Dashboards',
-            active: false,
             route: {
-              name: 'dashboard',
-              params: {}
+              name: 'dashboard'
             },
-            children: []
+            children: [
+              {
+                text: 'Dashboard v1',
+                route: {
+                  name: 'dashboard'
+                },
+              }
+            ]
           },
           {
             icon: 'fa fa-diamond',
             text: 'Layouts',
-            active: false,
             route: {
               name: 'layout',
+              params: {}
+            }
+          },
+          {
+            icon: 'fa fa-bar-chart-o',
+            text: 'Graphs',
+            route: {
+              name: 'graph',
+              params: {}
+            }
+          },
+          {
+            icon: 'fa fa-envelope',
+            text: 'Mailbox',
+            badge: {
+              class: 'warning',
+              text: '16/24'
+            },
+            route: {
+              name: 'mailbox',
               params: {}
             }
           }
         ]
       }
     },
-    methods: {
-      triggerCollapse(item) {
-        this.items.forEach((elem) => {
-          if (elem !== item) {
-            elem.active = false;
-          }
-        });
-        item.active = !item.active;
-      }
-    }
+    methods: {}
   }
 </script>
 
