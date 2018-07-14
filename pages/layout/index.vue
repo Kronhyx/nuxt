@@ -35,7 +35,7 @@
               <p>Check the Dashboard v.4 with top navigation layout</p>
               <div class="p-lg ">
                 <a href="dashboard_4.html">
-                  <img class="img-responsive img-shadow" src="../../assets/img/dashbard4_2.jpg"></a>
+                  <img class="img-responsive img-shadow" src="../../static/img/dashbard4_2.jpg"></a>
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@
             <div class="m-t-md">
               <p>Check the Dashboard v.4 with basic layout</p>
               <div class="p-lg">
-                <a href="dashboard_4_1.html"><img class="img-responsive img-shadow" src="../../assets/img/dashbard4_1.jpg"></a>
+                <a href="dashboard_4_1.html"><img class="img-responsive img-shadow" src="../../static/img/dashbard4_1.jpg"></a>
               </div>
             </div>
           </div>
@@ -85,7 +85,7 @@
             <div class="m-t-md">
               <p>Check the Outlook view in in full height page</p>
               <div class="p-lg ">
-                <a href="full_height.html"><img class="img-responsive img-shadow" src="../../assets/img/full_height.jpg"></a>
+                <a href="full_height.html"><img class="img-responsive img-shadow" src="../../static/img/full_height.jpg"></a>
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@
             <div class="m-t-md">
               <p>Check the off canvas menu on example article page</p>
               <div class="p-lg">
-                <a href="off_canvas_menu.html"><img class="img-responsive img-shadow" src="../../assets/img/off_canvas.jpg"></a>
+                <a href="off_canvas_menu.html"><img class="img-responsive img-shadow" src="../../static/img/off_canvas.jpg"></a>
               </div>
             </div>
           </div>
