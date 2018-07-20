@@ -22,7 +22,7 @@
       <a>
         <i :class="item.icon"></i>
         <span class="nav-label" v-text="item.text"></span>
-        <span class="fa arrow" v-if="item.children"></span>
+        <span class="fa arrow" v-if="item.children && !item.badge"></span>
         <span class="label pull-right text-uppercase" v-if="item.badge" :class="'label-'+item.badge.class">
           {{ item.badge.text }}
         </span>
@@ -124,9 +124,32 @@
               class: 'warning',
               text: '16/24'
             },
-            route: {
-              name: 'mailbox'
-            }
+            children: [
+              {
+                text: 'Inbox',
+                route: {
+                  name: 'mailbox-inbox'
+                },
+              },
+              {
+                text: 'Email view',
+                route: {
+                  name: 'mailbox-view'
+                },
+              },
+              {
+                text: 'Compose email',
+                route: {
+                  name: 'mailbox-compose'
+                },
+              },
+              {
+                text: 'Email templates',
+                route: {
+                  name: 'mailbox-compose'
+                },
+              },
+            ]
           },
           {
             icon: 'fa fa-pie-chart',
