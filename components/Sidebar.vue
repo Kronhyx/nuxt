@@ -17,12 +17,13 @@
       </div>
       <div class="logo-element">IN+</div>
     </li>
-    <nuxt-link v-for="(item,key) in items" :key="key" :tag="'li'" :to="item.children?'':item.route" :activeClass="'active'">
+    <nuxt-link v-for="(item,key) in items" :key="key" :tag="'li'" :to="item.route?item.route:'#'"
+               :activeClass="'active'">
       <a>
         <i :class="item.icon"></i>
         <span class="nav-label" v-text="item.text"></span>
         <span class="fa arrow" v-if="item.children"></span>
-        <span class="label pull-right" v-if="item.badge" :class="'label-'+item.badge.class">
+        <span class="label pull-right text-uppercase" v-if="item.badge" :class="'label-'+item.badge.class">
           {{ item.badge.text }}
         </span>
       </a>
@@ -46,9 +47,6 @@
           {
             icon: 'fa fa-th-large',
             text: 'Dashboards',
-            route: {
-              name: 'dashboard'
-            },
             children: [
               {
                 text: 'Dashboard v1',
@@ -62,16 +60,14 @@
             icon: 'fa fa-diamond',
             text: 'Layouts',
             route: {
-              name: 'layout',
-              params: {}
+              name: 'layout'
             }
           },
           {
             icon: 'fa fa-bar-chart-o',
             text: 'Graphs',
             route: {
-              name: 'graph',
-              params: {}
+              name: 'graph'
             }
           },
           {
@@ -82,8 +78,115 @@
               text: '16/24'
             },
             route: {
-              name: 'mailbox',
-              params: {}
+              name: 'mailbox'
+            }
+          },
+          {
+            icon: 'fa fa-pie-chart',
+            text: 'Metrics',
+            route: {
+              name: 'metric'
+            }
+          },
+          {
+            icon: 'fa fa-flask',
+            text: 'Widgets',
+            route: {
+              name: 'widget'
+            }
+          },
+          {
+            icon: 'fa fa-edit',
+            text: 'Forms',
+            children: [],
+          },
+          {
+            icon: 'fa fa-desktop',
+            text: 'App Views',
+            badge: {
+              class: 'primary',
+              text: 'special'
+            },
+            route: {
+              name: 'mailbox'
+            }
+          },
+          {
+            icon: 'fa fa-files-o',
+            text: 'Other Pages',
+            children: []
+          },
+          {
+            icon: 'fa fa-globe',
+            text: 'Miscellaneous',
+            badge: {
+              class: 'info',
+              text: 'new'
+            }
+          },
+          {
+            icon: 'fa fa-flask',
+            text: 'UI Elements',
+            badge: {
+              class: 'warning',
+              text: '16/24'
+            },
+            children: []
+          },
+          {
+            icon: 'fa fa-laptop',
+            text: 'Grid options',
+            route: {
+              name: 'grid'
+            }
+          },
+          {
+            icon: 'fa fa-table',
+            text: 'Tables',
+            children: []
+          },
+          {
+            icon: 'fa fa-shopping-cart',
+            text: 'E-commerce',
+            children: []
+          },
+          {
+            icon: 'fa fa-picture-o',
+            text: 'Gallery',
+            children: []
+          },
+          {
+            icon: 'fa fa-sitemap',
+            text: 'Menu Levels',
+            children: []
+          },
+          {
+            icon: 'fa fa-magic',
+            text: 'CSS Animations',
+            badge: {
+              class: 'info',
+              text: '62'
+            },
+            route: {
+              name: 'animation'
+            }
+          },
+          {
+            icon: 'fa fa-star',
+            text: 'Landing Page',
+            badge: {
+              class: 'warning',
+              text: 'new'
+            },
+            route: {
+              name: 'index'
+            }
+          },
+          {
+            icon: 'fa fa-database',
+            text: 'Package',
+            route: {
+              name: 'package'
             }
           }
         ]
