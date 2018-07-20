@@ -28,7 +28,7 @@
         </span>
       </a>
       <ul class="nav nav-second-level collapse in" :class="{in: isActive(item)}" v-if="item.children">
-        <li v-for="(children, chKey) in item.children" :key="chKey">
+        <li v-for="(children, chKey) in item.children" :key="chKey" :class="{active: isActive(children)}">
           <nuxt-link v-text="children.text" :to="children.route">
             <span class="label label-primary pull-right" v-if="children.badge" v-text="children.badge"></span>
           </nuxt-link>
@@ -181,7 +181,7 @@
               {
                 text: 'Basic form',
                 route: {
-                  name: 'form-baisc'
+                  name: 'form-basic'
                 },
               },
               {
@@ -223,14 +223,129 @@
               class: 'primary',
               text: 'special'
             },
-            route: {
-              name: 'mailbox'
-            }
+            children: [
+              {
+                text: 'Contacts',
+                route: {
+                  name: 'app-contact'
+                },
+              },
+              {
+                text: 'Profile',
+                route: {
+                  name: 'app-profile'
+                },
+              },
+              {
+                text: 'Profile v.2',
+                route: {
+                  name: 'app-profile2'
+                },
+              },
+              {
+                text: 'Contacts v.2',
+                route: {
+                  name: 'app-contac2'
+                },
+              },
+              {
+                text: 'Projects',
+                route: {
+                  name: 'app-project'
+                },
+              },
+              {
+                text: 'Projec detail',
+                route: {
+                  name: 'app-projectDetail'
+                },
+              },
+              {
+                text: 'Teams board',
+                route: {
+                  name: 'app-team'
+                },
+              },
+              {
+                text: 'Social feed',
+                route: {
+                  name: 'app-social'
+                },
+              },
+              {
+                text: 'Clients',
+                route: {
+                  name: 'app-social'
+                },
+              },
+              {
+                text: 'Outlook view',
+                route: {
+                  name: 'app-outlook'
+                },
+              },
+              {
+                text: 'Vote list',
+                route: {
+                  name: 'app-list'
+                },
+              },
+              {
+                text: 'File manager',
+                route: {
+                  name: 'app-file'
+                },
+              },
+              {
+                text: 'Calendar',
+                route: {
+                  name: 'app-calendar'
+                },
+              },
+              {
+                text: 'Issue tracker',
+                route: {
+                  name: 'app-tracker'
+                },
+              },
+              {
+                text: 'Blog',
+                route: {
+                  name: 'app-blog'
+                },
+              },
+              {
+                text: 'Article',
+                route: {
+                  name: 'app-article'
+                },
+              },
+              {
+                text: 'FAQ',
+                route: {
+                  name: 'app-faq'
+                },
+              },
+              {
+                text: 'Timeline',
+                route: {
+                  name: 'app-timeline'
+                },
+              },
+              {
+                text: 'Pin board',
+                route: {
+                  name: 'app-pin'
+                },
+              },
+            ]
           },
           {
             icon: 'fa fa-files-o',
             text: 'Other Pages',
-            children: []
+            children: [
+
+            ]
           },
           {
             icon: 'fa fa-globe',
