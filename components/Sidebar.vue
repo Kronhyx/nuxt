@@ -66,9 +66,56 @@
           {
             icon: 'fa fa-bar-chart-o',
             text: 'Graphs',
-            route: {
-              name: 'graph'
-            }
+            children: [
+              {
+                text: 'Flot Charts',
+                route: {
+                  name: 'graph-flot'
+                },
+              },
+              {
+                text: 'Flot Charts',
+                route: {
+                  name: 'graph-flot'
+                },
+              },
+              {
+                text: 'Flot Charts',
+                route: {
+                  name: 'graph-flot'
+                },
+              },
+              {
+                text: 'Flot Charts',
+                route: {
+                  name: 'graph-flot'
+                },
+              },
+              {
+                text: 'Flot Charts',
+                route: {
+                  name: 'graph-flot'
+                },
+              },
+              {
+                text: 'Flot Charts',
+                route: {
+                  name: 'graph-flot'
+                },
+              },
+              {
+                text: 'Flot Charts',
+                route: {
+                  name: 'graph-flot'
+                },
+              },
+              {
+                text: 'Flot Charts',
+                route: {
+                  name: 'graph-flot'
+                },
+              },
+            ]
           },
           {
             icon: 'fa fa-envelope',
