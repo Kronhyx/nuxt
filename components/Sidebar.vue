@@ -18,7 +18,7 @@
       <div class="logo-element">IN+</div>
     </li>
     <nuxt-link v-for="(item,key) in items" :key="key" :tag="'li'" :to="item.route?item.route:'#'"
-               :activeClass="'active'">
+               :class="{active: isActive(item)}">
       <a>
         <i :class="item.icon"></i>
         <span class="nav-label" v-text="item.text"></span>
@@ -27,7 +27,7 @@
           {{ item.badge.text }}
         </span>
       </a>
-      <ul class="nav nav-second-level collapse" v-if="item.children">
+      <ul class="nav nav-second-level collapse" :class="{in: isActive(item)}" v-if="item.children">
         <li v-for="(children, chKey) in item.children" :key="chKey">
           <nuxt-link v-text="children.text" :to="children.route">
             <span class="label label-primary pull-right" v-if="children.badge" v-text="children.badge"></span>
@@ -41,6 +41,15 @@
 <script>
   export default {
     name: "sidebar-nx",
+    methods: {
+      isActive(item) {
+        let route = typeof item.route !== typeof undefined ? this.$route.name === item.route.name : false;
+        let child = typeof item.children !== typeof undefined ? !!item.children.filter((elem) => {
+          return this.isActive(elem);
+        }).length : false;
+        return route || child;
+      }
+    },
     data() {
       return {
         items: [
@@ -74,45 +83,45 @@
                 },
               },
               {
-                text: 'Flot Charts',
+                text: 'Morris.js Charts',
                 route: {
-                  name: 'graph-flot'
+                  name: 'graph-morris'
                 },
               },
               {
-                text: 'Flot Charts',
+                text: 'Rickshaw Charts',
                 route: {
-                  name: 'graph-flot'
+                  name: 'graph-rickshaw'
                 },
               },
               {
-                text: 'Flot Charts',
+                text: 'Chart.js',
                 route: {
-                  name: 'graph-flot'
+                  name: 'graph-chart'
                 },
               },
               {
-                text: 'Flot Charts',
+                text: 'Chartist',
                 route: {
-                  name: 'graph-flot'
+                  name: 'graph-chartist'
                 },
               },
               {
-                text: 'Flot Charts',
+                text: 'C3 Charts',
                 route: {
-                  name: 'graph-flot'
+                  name: 'graph-c3'
                 },
               },
               {
-                text: 'Flot Charts',
+                text: 'Peity Charts',
                 route: {
-                  name: 'graph-flot'
+                  name: 'graph-peity'
                 },
               },
               {
-                text: 'Flot Charts',
+                text: 'Sparkline Charts',
                 route: {
-                  name: 'graph-flot'
+                  name: 'graph-sparkline'
                 },
               },
             ]
@@ -261,8 +270,7 @@
           }
         ]
       }
-    },
-    methods: {}
+    }
   }
 </script>
 
