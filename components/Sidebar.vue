@@ -177,7 +177,44 @@
           {
             icon: 'fa fa-edit',
             text: 'Forms',
-            children: [],
+            children: [
+              {
+                text: 'Basic form',
+                route: {
+                  name: 'form-baisc'
+                },
+              },
+              {
+                text: 'Advanced Plugins',
+                route: {
+                  name: 'form-advanced'
+                },
+              },
+              {
+                text: 'Wizard',
+                route: {
+                  name: 'form-wizard'
+                },
+              },
+              {
+                text: 'File Upload',
+                route: {
+                  name: 'form-upload'
+                }
+              },
+              {
+                text: 'Text Editor',
+                route: {
+                  name: 'form-editor'
+                },
+              },
+              {
+                text: 'Markdown',
+                route: {
+                  name: 'form-markdown'
+                },
+              },
+            ]
           },
           {
             icon: 'fa fa-desktop',
