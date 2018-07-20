@@ -27,7 +27,7 @@
           {{ item.badge.text }}
         </span>
       </a>
-      <ul class="nav nav-second-level collapse" :class="{in: isActive(item)}" v-if="item.children">
+      <ul class="nav nav-second-level collapse in" :class="{in: isActive(item)}" v-if="item.children">
         <li v-for="(children, chKey) in item.children" :key="chKey">
           <nuxt-link v-text="children.text" :to="children.route">
             <span class="label label-primary pull-right" v-if="children.badge" v-text="children.badge"></span>
