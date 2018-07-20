@@ -193,7 +193,7 @@
               },
               {
                 text: 'Contacts v.2',
-                route: {name: 'app-contac2'},
+                route: {name: 'app-contact2'},
               },
               {
                 text: 'Projects',
@@ -314,91 +314,91 @@
             children: [
               {
                 text: "Notification",
-                route: {name: "graph-Notification"}
+                route: {name: "miscellaneous-notification"}
               },
               {
                 text: "Nestable list",
-                route: {name: "graph-Nestable list"}
+                route: {name: "miscellaneous-nestable"}
               },
               {
                 text: "Agile board",
-                route: {name: "graph-Agile board"}
+                route: {name: "miscellaneous-board"}
               },
               {
                 text: "Timeline v.2",
-                route: {name: "graph-Timeline v.2"}
+                route: {name: "miscellaneous-timeline"}
               },
               {
                 text: "Diff",
-                route: {name: "graph-Diff"}
+                route: {name: "miscellaneous-diff"}
               },
               {
-                text: "i18 support",
-                route: {name: "graph-i18 support"}
+                text: "i18n support",
+                route: {name: "miscellaneous-i18n"}
               },
               {
                 text: "Sweet alert",
-                route: {name: "graph-Sweet alert"}
+                route: {name: "miscellaneous-alert"}
               },
               {
                 text: "Idle timer",
-                route: {name: "graph-Idle timer"}
+                route: {name: "miscellaneous-timer"}
               },
               {
                 text: "Truncate",
-                route: {name: "graph-Truncate"}
+                route: {name: "miscellaneous-truncate"}
               },
               {
                 text: "Spinners",
-                route: {name: "graph-Spinners"}
+                route: {name: "miscellaneous-spinners"}
               },
               {
-                text: "Live avicon",
-                route: {name: "graph-Live avicon"}
+                text: "Live Favicon",
+                route: {name: "miscellaneous-favicon"}
               },
               {
                 text: "Google maps",
-                route: {name: "graph-Google maps"}
+                route: {name: "miscellaneous-maps"}
               },
               {
                 text: "Code editor",
-                route: {name: "graph-Code editor"}
+                route: {name: "miscellaneous-editor"}
               },
               {
                 text: "Modal window",
-                route: {name: "graph-Modal window"}
+                route: {name: "miscellaneous-modal"}
               },
               {
                 text: "Clipboard",
-                route: {name: "graph-Clipboard"}
+                route: {name: "miscellaneous-clipboard"}
               },
               {
                 text: "Forum view",
-                route: {name: "graph-Forum view"}
+                route: {name: "miscellaneous-forum"}
               },
               {
                 text: "Validation",
-                route: {name: "graph-Validation"}
+                route: {name: "miscellaneous-validation"}
               },
               {
                 text: "Tree view",
-                route: {name: "graph-Tree view"}
+                route: {name: "miscellaneous-tree"}
               },
               {
                 text: "Loading buttons",
-                route: {name: "graph-Loading buttons"}
+                route: {name: "miscellaneous-loading"}
               },
               {
                 text: "Chat view",
-                route: {name: "graph-Chat view"}
+                route: {name: "miscellaneous-chat"}
               },
               {
                 text: "Masonry",
-                route: {name: "graph-Masonry"}
+                route: {name: "miscellaneous-masonry"}
               },
               {
                 text: "Tour",
-                route: {name: "graph-Tour"}
+                route: {name: "miscellaneous-tour"}
               }]
           },
           {
