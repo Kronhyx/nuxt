@@ -58,18 +58,14 @@
             children: [
               {
                 text: 'Dashboard v1',
-                route: {
-                  name: 'dashboard'
-                },
+                route: {name: 'dashboard'},
               }
             ]
           },
           {
             icon: 'fa fa-diamond',
             text: 'Layouts',
-            route: {
-              name: 'layout'
-            }
+            route: {name: 'layout'}
           },
           {
             icon: 'fa fa-bar-chart-o',
@@ -77,51 +73,35 @@
             children: [
               {
                 text: 'Flot Charts',
-                route: {
-                  name: 'graph-flot'
-                },
+                route: {name: 'graph-flot'},
               },
               {
                 text: 'Morris.js Charts',
-                route: {
-                  name: 'graph-morris'
-                },
+                route: {name: 'graph-morris'},
               },
               {
                 text: 'Rickshaw Charts',
-                route: {
-                  name: 'graph-rickshaw'
-                },
+                route: {name: 'graph-rickshaw'},
               },
               {
                 text: 'Chart.js',
-                route: {
-                  name: 'graph-chart'
-                },
+                route: {name: 'graph-chart'},
               },
               {
                 text: 'Chartist',
-                route: {
-                  name: 'graph-chartist'
-                },
+                route: {name: 'graph-chartist'},
               },
               {
                 text: 'C3 Charts',
-                route: {
-                  name: 'graph-c3'
-                },
+                route: {name: 'graph-c3'},
               },
               {
                 text: 'Peity Charts',
-                route: {
-                  name: 'graph-peity'
-                },
+                route: {name: 'graph-peity'},
               },
               {
                 text: 'Sparkline Charts',
-                route: {
-                  name: 'graph-sparkline'
-                },
+                route: {name: 'graph-sparkline'},
               },
             ]
           },
@@ -135,43 +115,31 @@
             children: [
               {
                 text: 'Inbox',
-                route: {
-                  name: 'mailbox-inbox'
-                },
+                route: {name: 'mailbox-inbox'},
               },
               {
                 text: 'Email view',
-                route: {
-                  name: 'mailbox-view'
-                },
+                route: {name: 'mailbox-view'},
               },
               {
                 text: 'Compose email',
-                route: {
-                  name: 'mailbox-compose'
-                },
+                route: {name: 'mailbox-compose'},
               },
               {
                 text: 'Email templates',
-                route: {
-                  name: 'mailbox-compose'
-                },
+                route: {name: 'mailbox-compose'},
               },
             ]
           },
           {
             icon: 'fa fa-pie-chart',
             text: 'Metrics',
-            route: {
-              name: 'metric'
-            }
+            route: {name: 'metric'}
           },
           {
             icon: 'fa fa-flask',
             text: 'Widgets',
-            route: {
-              name: 'widget'
-            }
+            route: {name: 'widget'}
           },
           {
             icon: 'fa fa-edit',
@@ -179,39 +147,27 @@
             children: [
               {
                 text: 'Basic form',
-                route: {
-                  name: 'form-basic'
-                },
+                route: {name: 'form-basic'},
               },
               {
                 text: 'Advanced Plugins',
-                route: {
-                  name: 'form-advanced'
-                },
+                route: {name: 'form-advanced'},
               },
               {
                 text: 'Wizard',
-                route: {
-                  name: 'form-wizard'
-                },
+                route: {name: 'form-wizard'},
               },
               {
                 text: 'File Upload',
-                route: {
-                  name: 'form-upload'
-                }
+                route: {name: 'form-upload'}
               },
               {
                 text: 'Text Editor',
-                route: {
-                  name: 'form-editor'
-                },
+                route: {name: 'form-editor'},
               },
               {
                 text: 'Markdown',
-                route: {
-                  name: 'form-markdown'
-                },
+                route: {name: 'form-markdown'},
               },
             ]
           },
@@ -225,117 +181,79 @@
             children: [
               {
                 text: 'Contacts',
-                route: {
-                  name: 'app-contact'
-                },
+                route: {name: 'app-contact'},
               },
               {
                 text: 'Profile',
-                route: {
-                  name: 'app-profile'
-                },
+                route: {name: 'app-profile'},
               },
               {
                 text: 'Profile v.2',
-                route: {
-                  name: 'app-profile2'
-                },
+                route: {name: 'app-profile2'},
               },
               {
                 text: 'Contacts v.2',
-                route: {
-                  name: 'app-contac2'
-                },
+                route: {name: 'app-contac2'},
               },
               {
                 text: 'Projects',
-                route: {
-                  name: 'app-project'
-                },
+                route: {name: 'app-project'},
               },
               {
                 text: 'Projec detail',
-                route: {
-                  name: 'app-projectDetail'
-                },
+                route: {name: 'app-projectDetail'},
               },
               {
                 text: 'Teams board',
-                route: {
-                  name: 'app-team'
-                },
+                route: {name: 'app-team'},
               },
               {
                 text: 'Social feed',
-                route: {
-                  name: 'app-social'
-                },
+                route: {name: 'app-social'},
               },
               {
                 text: 'Clients',
-                route: {
-                  name: 'app-social'
-                },
+                route: {name: 'app-social'},
               },
               {
                 text: 'Outlook view',
-                route: {
-                  name: 'app-outlook'
-                },
+                route: {name: 'app-outlook'},
               },
               {
                 text: 'Vote list',
-                route: {
-                  name: 'app-list'
-                },
+                route: {name: 'app-list'},
               },
               {
                 text: 'File manager',
-                route: {
-                  name: 'app-file'
-                },
+                route: {name: 'app-file'},
               },
               {
                 text: 'Calendar',
-                route: {
-                  name: 'app-calendar'
-                },
+                route: {name: 'app-calendar'},
               },
               {
                 text: 'Issue tracker',
-                route: {
-                  name: 'app-tracker'
-                },
+                route: {name: 'app-tracker'},
               },
               {
                 text: 'Blog',
-                route: {
-                  name: 'app-blog'
-                },
+                route: {name: 'app-blog'},
               },
               {
                 text: 'Article',
-                route: {
-                  name: 'app-article'
-                },
+                route: {name: 'app-article'},
               },
               {
                 text: 'FAQ',
-                route: {
-                  name: 'app-faq'
-                },
+                route: {name: 'app-faq'},
               },
               {
                 text: 'Timeline',
-                route: {
-                  name: 'app-timeline'
-                },
+                route: {name: 'app-timeline'},
               },
               {
                 text: 'Pin board',
-                route: {
-                  name: 'app-pin'
-                },
+                route: {name: 'app-pin'},
               },
             ]
           },
@@ -345,65 +263,44 @@
             children: [
               {
                 text: 'Search results',
-                route: {
-                  name: 'other-search'
-                },
+                route: {name: 'other-search'},
               },
               {
                 text: 'Lockscreen',
-                route: {
-                  name: 'other-lockscreen'
-                },
-
+                route: {name: 'other-lockscreen'},
               },
               {
                 text: 'Invoice',
-                route: {
-                  name: 'other-invoice'
-                },
+                route: {name: 'other-invoice'},
               },
               {
                 text: 'Login',
-                route: {
-                  name: 'other-login'
-                },
+                route: {name: 'other-login'},
 
               },
               {
                 text: 'Login v.2',
-                route: {
-                  name: 'other-login2'
-                },
+                route: {name: 'other-login2'},
               },
               {
                 text: 'Forget password',
-                route: {
-                  name: 'other-forget'
-                },
+                route: {name: 'other-forget'},
               },
               {
                 text: 'Register',
-                route: {
-                  name: 'other-register'
-                },
+                route: {name: 'other-register'},
               },
               {
                 text: '404 Page',
-                route: {
-                  name: 'other-404'
-                },
+                route: {name: 'other-404'},
               },
               {
                 text: '500 Page',
-                route: {
-                  name: 'other-500'
-                },
+                route: {name: 'other-500'},
               },
               {
                 text: 'Empty page',
-                route: {
-                  name: 'other-empty'
-                },
+                route: {name: 'other-empty'},
               }
             ]
           },
@@ -413,7 +310,96 @@
             badge: {
               class: 'info',
               text: 'new'
-            }
+            },
+            children: [
+              {
+                text: "Notification",
+                route: {name: "graph-Notification"}
+              },
+              {
+                text: "Nestable list",
+                route: {name: "graph-Nestable list"}
+              },
+              {
+                text: "Agile board",
+                route: {name: "graph-Agile board"}
+              },
+              {
+                text: "Timeline v.2",
+                route: {name: "graph-Timeline v.2"}
+              },
+              {
+                text: "Diff",
+                route: {name: "graph-Diff"}
+              },
+              {
+                text: "i18 support",
+                route: {name: "graph-i18 support"}
+              },
+              {
+                text: "Sweet alert",
+                route: {name: "graph-Sweet alert"}
+              },
+              {
+                text: "Idle timer",
+                route: {name: "graph-Idle timer"}
+              },
+              {
+                text: "Truncate",
+                route: {name: "graph-Truncate"}
+              },
+              {
+                text: "Spinners",
+                route: {name: "graph-Spinners"}
+              },
+              {
+                text: "Live avicon",
+                route: {name: "graph-Live avicon"}
+              },
+              {
+                text: "Google maps",
+                route: {name: "graph-Google maps"}
+              },
+              {
+                text: "Code editor",
+                route: {name: "graph-Code editor"}
+              },
+              {
+                text: "Modal window",
+                route: {name: "graph-Modal window"}
+              },
+              {
+                text: "Clipboard",
+                route: {name: "graph-Clipboard"}
+              },
+              {
+                text: "Forum view",
+                route: {name: "graph-Forum view"}
+              },
+              {
+                text: "Validation",
+                route: {name: "graph-Validation"}
+              },
+              {
+                text: "Tree view",
+                route: {name: "graph-Tree view"}
+              },
+              {
+                text: "Loading buttons",
+                route: {name: "graph-Loading buttons"}
+              },
+              {
+                text: "Chat view",
+                route: {name: "graph-Chat view"}
+              },
+              {
+                text: "Masonry",
+                route: {name: "graph-Masonry"}
+              },
+              {
+                text: "Tour",
+                route: {name: "graph-Tour"}
+              }]
           },
           {
             icon: 'fa fa-flask',
@@ -427,9 +413,7 @@
           {
             icon: 'fa fa-laptop',
             text: 'Grid options',
-            route: {
-              name: 'grid'
-            }
+            route: {name: 'grid'}
           },
           {
             icon: 'fa fa-table',
@@ -458,9 +442,7 @@
               class: 'info',
               text: '62'
             },
-            route: {
-              name: 'animation'
-            }
+            route: {name: 'animation'}
           },
           {
             icon: 'fa fa-star',
@@ -469,16 +451,12 @@
               class: 'warning',
               text: 'new'
             },
-            route: {
-              name: 'index'
-            }
+            route: {name: 'index'}
           },
           {
             icon: 'fa fa-database',
             text: 'Package',
-            route: {
-              name: 'package'
-            }
+            route: {name: 'package'}
           }
         ]
       }
