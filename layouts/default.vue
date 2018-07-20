@@ -34,7 +34,7 @@
         </div>
         <div class="row wrapper border-bottom white-bg page-heading">
           <div class="col-sm-4">
-            <h2>This is main title</h2>
+            <h2>{{ title }}</h2>
             <ol class="breadcrumb">
               <li>
                 <a href="#">This is</a>
@@ -69,6 +69,7 @@
     components: {NuxtLoading, SidebarNx},
     data() {
       return {
+        title: this.$route.name.toUpperCase(),
         query: null
       }
     }
