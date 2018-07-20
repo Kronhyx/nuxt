@@ -58,7 +58,6 @@
     components: {BreadcrumbNx, NuxtLoading, SidebarNx},
     data() {
       return {
-        title: this.$route.name.toUpperCase(),
         query: null
       }
     }

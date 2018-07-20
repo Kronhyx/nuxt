@@ -184,7 +184,7 @@
             </h2>
             <small>Founder of Groupeq</small>
           </div>
-          <img src="img/a4.jpg" class="img-circle circle-border m-b-md" alt="profile">
+          <img src="../../static/img/a4.jpg" class="img-circle circle-border m-b-md" alt="profile">
           <div>
             <span>100 Tweets</span> |
             <span>350 Following</span> |
@@ -292,7 +292,7 @@
 
                 <div class="chat-element">
                   <a href="#" class="pull-left">
-                    <img alt="image" class="img-circle" src="img/a2.jpg">
+                    <img alt="image" class="img-circle" src="../../static/img/a2.jpg">
                   </a>
                   <div class="media-body ">
                     <small class="pull-right text-navy">1m ago</small>
@@ -306,7 +306,7 @@
 
                 <div class="chat-element right">
                   <a href="#" class="pull-right">
-                    <img alt="image" class="img-circle" src="img/a4.jpg">
+                    <img alt="image" class="img-circle" src="../../static/img/a4.jpg">
                   </a>
                   <div class="media-body text-right ">
                     <small class="pull-left">5m ago</small>
@@ -320,7 +320,7 @@
 
                 <div class="chat-element ">
                   <a href="#" class="pull-left">
-                    <img alt="image" class="img-circle" src="img/a2.jpg">
+                    <img alt="image" class="img-circle" src="../../static/img/a2.jpg">
                   </a>
                   <div class="media-body ">
                     <small class="pull-right">2h ago</small>
@@ -401,7 +401,7 @@
               <div class="ibox-content text-center">
                 <h1>Nicki Smith</h1>
                 <div class="m-b-sm">
-                  <img alt="image" class="img-circle" src="img/a8.jpg">
+                  <img alt="image" class="img-circle" src="../../static/img/a8.jpg">
                 </div>
                 <p class="font-bold">Consectetur adipisicing</p>
 
@@ -460,22 +460,22 @@
           <small>This is example of task list</small>
           <ul class="todo-list m-t">
             <li>
-              <input type="checkbox" value="" name="" class="i-checks"/>
+              <input type="checkbox" value="" name="" class="i-checks" title=""/>
               <span class="m-l-xs">Buy a milk</span>
               <small class="label label-primary"><i class="fa fa-clock-o"></i> 1 mins</small>
             </li>
             <li>
-              <input type="checkbox" value="" name="" class="i-checks" checked/>
+              <input type="checkbox" value="" name="" class="i-checks" checked title=""/>
               <span class="m-l-xs">Go to shop and find some products.</span>
               <small class="label label-info"><i class="fa fa-clock-o"></i> 3 mins</small>
             </li>
             <li>
-              <input type="checkbox" value="" name="" class="i-checks"/>
+              <input type="checkbox" value="" name="" class="i-checks" title=""/>
               <span class="m-l-xs">Send documents to Mike</span>
               <small class="label label-warning"><i class="fa fa-clock-o"></i> 2 mins</small>
             </li>
             <li>
-              <input type="checkbox" value="" name="" class="i-checks"/>
+              <input type="checkbox" value="" name="" class="i-checks" title=""/>
               <span class="m-l-xs">Go to the doctor dr Smith</span>
               <small class="label label-danger"><i class="fa fa-clock-o"></i> 42 mins</small>
             </li>
