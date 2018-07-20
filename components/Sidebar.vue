@@ -27,7 +27,7 @@
           {{ item.badge.text }}
         </span>
       </a>
-      <ul class="nav nav-second-level collapse in" :class="{in: isActive(item)}" v-if="item.children">
+      <ul class="nav nav-second-level collapse" :class="{in: isActive(item)}" v-if="item.children">
         <li v-for="(children, chKey) in item.children" :key="chKey" :class="{active: isActive(children)}">
           <nuxt-link v-text="children.text" :to="children.route">
             <span class="label label-primary pull-right" v-if="children.badge" v-text="children.badge"></span>
@@ -344,7 +344,68 @@
             icon: 'fa fa-files-o',
             text: 'Other Pages',
             children: [
+              {
+                text: 'Search results',
+                route: {
+                  name: 'other-search'
+                },
+              },
+              {
+                text: 'Lockscreen',
+                route: {
+                  name: 'other-lockscreen'
+                },
 
+              },
+              {
+                text: 'Invoice',
+                route: {
+                  name: 'other-invoice'
+                },
+              },
+              {
+                text: 'Login',
+                route: {
+                  name: 'other-login'
+                },
+
+              },
+              {
+                text: 'Login v.2',
+                route: {
+                  name: 'other-login2'
+                },
+              },
+              {
+                text: 'Forget password',
+                route: {
+                  name: 'other-forget'
+                },
+              },
+              {
+                text: 'Register',
+                route: {
+                  name: 'other-register'
+                },
+              },
+              {
+                text: '404 Page',
+                route: {
+                  name: 'other-404'
+                },
+              },
+              {
+                text: '500 Page',
+                route: {
+                  name: 'other-500'
+                },
+              },
+              {
+                text: 'Empty page',
+                route: {
+                  name: 'other-empty'
+                },
+              }
             ]
           },
           {
