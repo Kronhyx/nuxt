@@ -32,24 +32,12 @@
 
           </nav>
         </div>
-        <div class="row wrapper border-bottom white-bg page-heading">
-          <div class="col-sm-4">
-            <h2>{{ title }}</h2>
-            <ol class="breadcrumb">
-              <li>
-                <a href="#">This is</a>
-              </li>
-              <li class="active">
-                <strong>Breadcrumb</strong>
-              </li>
-            </ol>
-          </div>
-        </div>
+        <breadcrumb-nx/>
         <div class="wrapper wrapper-content animated fadeIn">
           <nuxt/>
         </div>
         <div class="footer">
-          <div class="pull-right">10GB of <strong>250GB</strong> Free.
+          <div class="pull-right">Powered by: <strong>Kronhyx</strong>
           </div>
           <div>
             <strong>Copyright</strong> Example Company &copy; 2014-2015
@@ -64,9 +52,10 @@
 <script>
   import SidebarNx from "../components/Sidebar";
   import NuxtLoading from "../.nuxt/components/nuxt-loading";
+  import BreadcrumbNx from "../components/Breadcrumb";
 
   export default {
-    components: {NuxtLoading, SidebarNx},
+    components: {BreadcrumbNx, NuxtLoading, SidebarNx},
     data() {
       return {
         title: this.$route.name.toUpperCase(),

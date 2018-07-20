@@ -1,5 +1,4 @@
 <template>
-
   <ul class="nav metismenu" id="side-menu">
     <li class="nav-header">
       <div class="dropdown profile-element">
