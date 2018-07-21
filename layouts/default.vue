@@ -2,6 +2,7 @@
   <div>
     <nuxt-loading/>
     <div id="wrapper">
+
       <nav class="navbar-default navbar-static-side" role="navigation">
         <div class="sidebar-collapse">
           <ul class="nav metismenu" id="side-menu">
@@ -75,8 +76,14 @@
 
   export default {
     components: {BreadcrumbNx, NuxtLoading, MenuNx},
+    head() {
+      return {
+        bodyAttrs: {
+          class: 'fixed-sidebar'
+        }
+      }
+    },
     data() {
-
       return {
         query: null,
         items: new MenuCollection([
@@ -95,7 +102,11 @@
              .addChildren(new Menu('C3 Charts').setRoute('graph-c3'))
              .addChildren(new Menu('Peity Charts').setRoute('graph-peity'))
              .addChildren(new Menu('Sparkline Charts').setRoute('graph-sparkline')),
-          new Menu('Mailbox', 'fa fa-envelope').setRoute('mailbox-inbox').setBadge('16/24', 'warning'),
+          new Menu('Mailbox', 'fa fa-envelope').setBadge('16/24', 'warning')
+             .addChildren(new Menu('Inbox').setRoute('mailbox-inbox'))
+             .addChildren(new Menu('Email View').setRoute('mailbox-view'))
+             .addChildren(new Menu('Compose email').setRoute('mailbox-compose'))
+             .addChildren(new Menu('Email templates').setRoute('mailbox-template')),
           new Menu('Metrics', 'fa fa-pie-chart').setRoute('metric'),
           new Menu('Widgets', 'fa fa-flask').setRoute('widget'),
           new Menu('Forms', 'fa fa-edit')
@@ -183,7 +194,7 @@
              .addChildren(new Menu('Products detail').setRoute('commerce-detail'))
              .addChildren(new Menu('Cart').setRoute('commerce-cart'))
              .addChildren(new Menu('Orders').setRoute('commerce-order'))
-             .addChildren(new Menu('Credit Card form').setRoute('commerce-form')),
+             .addChildren(new Menu('Credit Card form').setRoute('commerce-payments')),
           new Menu('Gallery', 'fa fa-picture-o')
              .addChildren(new Menu('Lightbox Gallery').setRoute('gallery-lightboxt'))
              .addChildren(new Menu('Slick Carousel').setRoute('gallery-slick'))

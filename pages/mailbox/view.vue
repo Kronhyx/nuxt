@@ -4,7 +4,12 @@
 
 <script>
   export default {
-    name: 'mailbox-view'
+    name: 'mailbox-view',
+    head() {
+      return {
+        title: 'Mailbox'
+      }
+    }
   }
 </script>
 

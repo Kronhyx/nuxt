@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'mailbox-detail',
+    name: 'gallery-lightboxt',
     head() {
       return {
-        title: 'Mailbox'
+        title: 'Lightbox Gallery'
       }
     }
   }

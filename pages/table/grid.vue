@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'mailbox-detail',
+    name: 'table-grid',
     head() {
       return {
-        title: 'Mailbox'
+        title: 'jqGrid'
       }
     }
   }

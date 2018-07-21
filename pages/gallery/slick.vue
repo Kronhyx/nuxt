@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'mailbox-detail',
+    name: 'gallery-slick',
     head() {
       return {
-        title: 'Mailbox'
+        title: 'Slick Carousel'
       }
     }
   }

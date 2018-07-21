@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'mailbox-detail',
+    name: 'table-static',
     head() {
       return {
-        title: 'Mailbox'
+        title: 'Static Tables'
       }
     }
   }

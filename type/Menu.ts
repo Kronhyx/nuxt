@@ -141,7 +141,6 @@ export class MenuCollection {
 
     add($menu: Menu) {
         this._$elements.push($menu);
-        console.log(this._$elements);
         return this;
     }
 

@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'mailbox-detail',
+    name: 'commerce-order',
     head() {
       return {
-        title: 'Mailbox'
+        title: 'Orders'
       }
     }
   }

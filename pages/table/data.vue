@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'mailbox-detail',
+    name: 'table-data',
     head() {
       return {
-        title: 'Mailbox'
+        title: 'Data Tables'
       }
     }
   }

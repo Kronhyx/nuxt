@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'mailbox-detail',
+    name: 'gallery-bootstrap',
     head() {
       return {
-        title: 'Mailbox'
+        title: 'Bootstrap Carousel'
       }
     }
   }
