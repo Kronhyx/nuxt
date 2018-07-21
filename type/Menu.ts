@@ -7,14 +7,15 @@ export class Menu {
     private _$icon?: String;
     private _$class?: Array<String>;
     private _$route?: Route;
-    private _$badge?: Badge;
-    private _$children: Array<Menu>;
+    private _$badge?: Badge | Boolean;
+    private _$children: MenuCollection;
 
     constructor($text: String, $icon: String = null) {
         this._$text = $text;
         this._$icon = $icon;
+        this._$badge = false;
         this._$class = [];
-        this._$children = [];
+        this._$children = new MenuCollection();
     }
 
     get $text(): String {
@@ -41,19 +42,20 @@ export class Menu {
         this._$route = value;
     }
 
-    get $children(): Array<Menu> {
+    get $children(): MenuCollection {
         return this._$children;
     }
 
-    set $children(value: Array<Menu>) {
+    set $children(value: MenuCollection) {
         this._$children = value;
     }
 
-    get $badge(): Badge {
+
+    get $badge(): Badge | Boolean {
         return this._$badge;
     }
 
-    set $badge(value: Badge) {
+    set $badge(value: Badge | Boolean) {
         this._$badge = value;
     }
 
@@ -85,7 +87,7 @@ export class Menu {
     }
 
     addChildren($menu: Menu): Menu {
-        this._$children.push($menu);
+        this._$children.add($menu);
         return this;
     }
 
@@ -94,11 +96,61 @@ export class Menu {
             return this.$route.$name === $router.name;
         }
 
-        return !!this.$children.filter(($menu: Menu) => {
+        return !!this.$children.$elements.filter(($menu: Menu) => {
             return $menu.isCurrent($router);
         }).length;
     }
 
 }
 
+export class MenuCollection {
 
+    private _$expanded: Boolean;
+    private _$class?: String;
+    private _$elements: Array<Menu>;
+
+    constructor($elements: Array<Menu> = []) {
+        this._$elements = $elements;
+        this._$expanded = false;
+        this._$class = null;
+    }
+
+    get $expanded(): Boolean {
+        return this._$expanded;
+    }
+
+    set $expanded($value: Boolean) {
+        this._$expanded = $value;
+    }
+
+    get $class(): String {
+        return this._$class;
+    }
+
+    set $class($value: String) {
+        this._$class = $value;
+    }
+
+    get $elements(): Array<Menu> {
+        return this._$elements;
+    }
+
+    set $elements($value: Array<Menu>) {
+        this._$elements = $value;
+    }
+
+    add($menu: Menu) {
+        this._$elements.push($menu);
+        console.log(this._$elements);
+        return this;
+    }
+
+    isEmpty() {
+        return !this.$elements.length
+    }
+
+    isFilled() {
+        return !this.isEmpty();
+    }
+
+}

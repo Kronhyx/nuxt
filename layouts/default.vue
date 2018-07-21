@@ -21,7 +21,7 @@
               </div>
               <div class="logo-element">IN+</div>
             </li>
-            <menu-nx v-for="(item,key) in items" :key="key" :menu="item"/>
+            <menu-nx v-for="(item,key) in items.$elements" :key="key" :menu="item"/>
           </ul>
         </div>
       </nav>
@@ -71,7 +71,7 @@
   import MenuNx from "../components/Menu";
   import NuxtLoading from "../.nuxt/components/nuxt-loading";
   import BreadcrumbNx from "../components/Breadcrumb";
-  import {Menu} from "../type/Menu";
+  import {Menu, MenuCollection} from "../type/Menu";
 
   export default {
     components: {BreadcrumbNx, NuxtLoading, MenuNx},
@@ -79,7 +79,7 @@
 
       return {
         query: null,
-        items: [
+        items: new MenuCollection([
           new Menu('Dashboards', 'fa fa-th-large')
              .addChildren(new Menu('Dashboard v1').setRoute('dashboard'))
              .addChildren(new Menu('Dashboard v2').setRoute('dashboard-dashboard2'))
@@ -199,7 +199,7 @@
           new Menu('CSS Animations', 'fa fa-magic').setRoute('animation'),
           new Menu('Landing Page', 'fa fa-star').setRoute('index').addClass('landing_link'),
           new Menu('Package', 'fa fa-database').setRoute('package').addClass('special_link'),
-        ]
+        ])
       }
     }
   }
