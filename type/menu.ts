@@ -3,6 +3,7 @@ import {Location} from 'vue-router';
 export class Menu {
     private _$text: String;
     private _$icon?: String;
+    private _$class?: Array<String>;
     private _$route?: Route;
     private _$badge?: Badge;
     private _$children: Array<Menu>;
@@ -10,6 +11,7 @@ export class Menu {
     constructor($text: String, $icon: String = null) {
         this._$text = $text;
         this._$icon = $icon;
+        this._$class = [];
         this._$children = [];
     }
 
@@ -51,6 +53,23 @@ export class Menu {
 
     set $badge(value: Badge) {
         this._$badge = value;
+    }
+
+    get $class(): Array<String> {
+        return this._$class;
+    }
+
+    set $class(value: Array<String>) {
+        this._$class = value;
+    }
+
+    getClass(): String {
+        return this.$class.join(' ');
+    }
+
+    addClass($class: String): Menu {
+        this._$class.push($class);
+        return this;
     }
 
     setRoute($name: String, $params: Array<Object> = []): Menu {

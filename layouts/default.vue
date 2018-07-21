@@ -197,8 +197,8 @@
              .addChildren(new Menu('Second Level item'))
              .addChildren(new Menu('Second Level item')),
           new Menu('CSS Animations', 'fa fa-magic').setRoute('animation'),
-          new Menu('Landing Page', 'fa fa-star').setRoute('index'),
-          new Menu('Package', 'fa fa-database').setRoute('package'),
+          new Menu('Landing Page', 'fa fa-star').setRoute('index').addClass('landing_link'),
+          new Menu('Package', 'fa fa-database').setRoute('package').addClass('special_link'),
         ]
       }
     }
