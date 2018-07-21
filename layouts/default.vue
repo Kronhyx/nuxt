@@ -71,7 +71,7 @@
   import MenuNx from "../components/Menu";
   import NuxtLoading from "../.nuxt/components/nuxt-loading";
   import BreadcrumbNx from "../components/Breadcrumb";
-  import {Menu} from "../type/menu";
+  import {Menu} from "../type/Menu";
 
   export default {
     components: {BreadcrumbNx, NuxtLoading, MenuNx},

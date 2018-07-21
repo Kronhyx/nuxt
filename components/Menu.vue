@@ -15,7 +15,7 @@
 </template>
 
 <script>
-  import {Menu} from "../type/menu";
+  import {Menu} from "../type/Menu";
 
   export default {
     name: 'menu-nx',

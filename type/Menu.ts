@@ -1,4 +1,6 @@
 import {Location} from 'vue-router';
+import {Route} from "./Route";
+import {Badge} from "./Badge";
 
 export class Menu {
     private _$text: String;
@@ -99,61 +101,4 @@ export class Menu {
 
 }
 
-export class Route {
-    private _$name: String;
-    private _$params?: Array<Object>;
 
-    constructor($name: String, $params: Array<Object> = []) {
-        this._$name = $name;
-        this._$params = $params;
-    }
-
-    get $name(): String {
-        return this._$name;
-    }
-
-    set $name(value: String) {
-        this._$name = value;
-    }
-
-    get $params(): Array<Object> {
-        return this._$params;
-    }
-
-    set $params(value: Array<Object>) {
-        this._$params = value;
-    }
-
-    path() {
-        return {
-            name: this.$name,
-            params: this.$params
-        }
-    }
-}
-
-export class Badge {
-    private _$class: String;
-    private _$text: String;
-
-    constructor($text: String, $class: String) {
-        this._$text = $text;
-        this._$class = $class;
-    }
-
-    get $class(): String {
-        return this._$class;
-    }
-
-    set $class(value: String) {
-        this._$class = value;
-    }
-
-    get $text(): String {
-        return this._$text;
-    }
-
-    set $text(value: String) {
-        this._$text = value;
-    }
-}
