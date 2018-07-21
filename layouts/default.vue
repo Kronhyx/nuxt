@@ -450,7 +450,48 @@
           {
             icon: 'fa fa-flask',
             text: 'UI Elements',
-            children: []
+            children: [
+              {
+                text: "Typography",
+                route: {name: "ui-typography"}
+              },
+              {
+                text: "Icons",
+                route: {name: "ui-icon"}
+              },
+              {
+                text: "Draggable Panels",
+                route: {name: "ui-draggable"}
+              },
+              {
+                text: "Resizeable Panels",
+                route: {name: "ui-resizeable"}
+              },
+              {
+                text: "Buttons",
+                route: {name: "ui-button"}
+              },
+              {
+                text: "Video",
+                route: {name: "ui-video"}
+              },
+              {
+                text: "Panels",
+                route: {name: "ui-panel"}
+              },
+              {
+                text: "Tabs",
+                route: {name: "ui-tab"}
+              },
+              {
+                text: "Notifications & Tooltips",
+                route: {name: "ui-notifications"}
+              },
+              {
+                text: "Badges, Labels, Progress",
+                route: {name: "ui-label"}
+              }
+            ]
           },
           {
             icon: 'fa fa-laptop',
