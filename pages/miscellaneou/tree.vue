@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'miscellaneous-editor',
+    name: 'miscellaneou-tree',
     head() {
       return {
-        title: 'Code Editor'
+        title: 'Tree view'
       }
     }
   }

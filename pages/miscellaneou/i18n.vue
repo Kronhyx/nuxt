@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'miscellaneous-forum',
+    name: 'miscellaneou-i18n',
     head() {
       return {
-        title: 'Forum'
+        title: 'i18n Support'
       }
     }
   }

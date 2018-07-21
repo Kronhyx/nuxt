@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'miscellaneous-tour',
+    name: 'miscellaneou-truncate',
     head() {
       return {
-        title: 'Tour'
+        title: 'Truncate'
       }
     }
   }

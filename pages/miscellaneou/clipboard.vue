@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'miscellaneous-timeline',
+    name: 'miscellaneou-clipboard',
     head() {
       return {
-        title: 'Timeline v2'
+        title: 'Copy to clipboard'
       }
     }
   }

@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'miscellaneous-tree',
+    name: 'miscellaneou-diff',
     head() {
       return {
-        title: 'Tree view'
+        title: 'Diff'
       }
     }
   }

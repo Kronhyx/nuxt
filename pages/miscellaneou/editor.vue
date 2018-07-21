@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'miscellaneous-nestable',
+    name: 'miscellaneou-editor',
     head() {
       return {
-        title: 'Nestable list'
+        title: 'Code Editor'
       }
     }
   }

@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'miscellaneous-map',
+    name: 'miscellaneou-chat',
     head() {
       return {
-        title: 'Google Maps'
+        title: 'Chat view'
       }
     }
   }

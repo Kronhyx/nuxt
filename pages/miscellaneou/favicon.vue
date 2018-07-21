@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'miscellaneous-validation',
+    name: 'miscellaneou-favicon',
     head() {
       return {
-        title: 'Validation'
+        title: 'TinyIcon'
       }
     }
   }

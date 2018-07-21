@@ -95,7 +95,7 @@
              .addChildren(new Menu('C3 Charts').setRoute('graph-c3'))
              .addChildren(new Menu('Peity Charts').setRoute('graph-peity'))
              .addChildren(new Menu('Sparkline Charts').setRoute('graph-sparkline')),
-          new Menu('Mailbox', 'fa fa-envelope').setRoute('mailbox').setBadge('16/24', 'warning'),
+          new Menu('Mailbox', 'fa fa-envelope').setRoute('mailbox-inbox').setBadge('16/24', 'warning'),
           new Menu('Metrics', 'fa fa-pie-chart').setRoute('metric'),
           new Menu('Widgets', 'fa fa-flask').setRoute('widget'),
           new Menu('Forms', 'fa fa-edit')
@@ -105,15 +105,97 @@
              .addChildren(new Menu('File Upload').setRoute('form-upload'))
              .addChildren(new Menu('Text Editor').setRoute('form-editor'))
              .addChildren(new Menu('Markdown').setRoute('form-markdown')),
-          new Menu('App Views', 'fa fa-desktop'),
-          new Menu('Other Pages', 'fa fa-files-o'),
-          new Menu('Miscellaneous', 'fa fa-globe'),
-          new Menu('UI Elements', 'fa fa-flask'),
+          new Menu('App Views', 'fa fa-desktop')
+             .addChildren(new Menu('Contacts').setRoute('app-contact'))
+             .addChildren(new Menu('Profile').setRoute('app-profile'))
+             .addChildren(new Menu('Profile v2').setRoute('app-profile2'))
+             .addChildren(new Menu('Contacts v2').setRoute('app-contact2'))
+             .addChildren(new Menu('Projects').setRoute('app-project'))
+             .addChildren(new Menu('Project detail').setRoute('app-projectDetail'))
+             .addChildren(new Menu('Teams board').setRoute('app-team'))
+             .addChildren(new Menu('Social feed').setRoute('app-social'))
+             .addChildren(new Menu('Clients').setRoute('app-client'))
+             .addChildren(new Menu('Outlook view').setRoute('app-outlook'))
+             .addChildren(new Menu('Vote list').setRoute('app-list'))
+             .addChildren(new Menu('File manager').setRoute('app-file'))
+             .addChildren(new Menu('Calendar').setRoute('app-calendar'))
+             .addChildren(new Menu('Issue tracker').setRoute('app-tracker'))
+             .addChildren(new Menu('Blog').setRoute('app-blog'))
+             .addChildren(new Menu('Article').setRoute('app-article'))
+             .addChildren(new Menu('FAQ').setRoute('app-faq'))
+             .addChildren(new Menu('Timeline').setRoute('app-timeline'))
+             .addChildren(new Menu('Pin board').setRoute('app-pin')),
+          new Menu('Other Pages', 'fa fa-files-o')
+             .addChildren(new Menu('Search results').setRoute('other-search'))
+             .addChildren(new Menu('Lockscreen').setRoute('other-lockscreen'))
+             .addChildren(new Menu('Invoice').setRoute('other-invoice'))
+             .addChildren(new Menu('Login').setRoute('other-login'))
+             .addChildren(new Menu('Login v2').setRoute('other-login2'))
+             .addChildren(new Menu('Forget password').setRoute('other-forget'))
+             .addChildren(new Menu('Register').setRoute('other-register'))
+             .addChildren(new Menu('404 Page').setRoute('other-404'))
+             .addChildren(new Menu('500 Page').setRoute('other-500'))
+             .addChildren(new Menu('Empty page').setRoute('other-empty')),
+          new Menu('Miscellaneous', 'fa fa-globe')
+             .addChildren(new Menu('Notification').setRoute('miscellaneou-notification'))
+             .addChildren(new Menu('Nestable list').setRoute('miscellaneou-nestable'))
+             .addChildren(new Menu('Agile board').setRoute('miscellaneou-board'))
+             .addChildren(new Menu('Timeline v2').setRoute('miscellaneou-timeline'))
+             .addChildren(new Menu('Diff').setRoute('miscellaneou-diff'))
+             .addChildren(new Menu('i18n support').setRoute('miscellaneou-i18n'))
+             .addChildren(new Menu('Sweet alert').setRoute('miscellaneou-alert'))
+             .addChildren(new Menu('Idle timer').setRoute('miscellaneou-timer'))
+             .addChildren(new Menu('Truncate').setRoute('miscellaneou-truncate'))
+             .addChildren(new Menu('Spinners').setRoute('miscellaneou-spinner'))
+             .addChildren(new Menu('Live favicon').setRoute('miscellaneou-favicon'))
+             .addChildren(new Menu('Google maps').setRoute('miscellaneou-map'))
+             .addChildren(new Menu('Code editor').setRoute('miscellaneou-editor'))
+             .addChildren(new Menu('Modal window').setRoute('miscellaneou-modal'))
+             .addChildren(new Menu('Clipboard').setRoute('miscellaneou-clipboard'))
+             .addChildren(new Menu('Forum view').setRoute('miscellaneou-forum'))
+             .addChildren(new Menu('Validation').setRoute('miscellaneou-validation'))
+             .addChildren(new Menu('Tree view').setRoute('miscellaneou-tree'))
+             .addChildren(new Menu('Loading buttons').setRoute('miscellaneou-loading'))
+             .addChildren(new Menu('Chat view').setRoute('miscellaneou-chat'))
+             .addChildren(new Menu('Masonry').setRoute('miscellaneou-masonry'))
+             .addChildren(new Menu('Tour').setRoute('miscellaneou-tour')),
+          new Menu('UI Elements', 'fa fa-flask')
+             .addChildren(new Menu('Typography').setRoute('ui-typography'))
+             .addChildren(new Menu('Icons').setRoute('ui-icon'))
+             .addChildren(new Menu('Draggable Panels').setRoute('ui-draggable'))
+             .addChildren(new Menu('Resizeable Panels').setRoute('ui-resizeable'))
+             .addChildren(new Menu('Buttons').setRoute('ui-button'))
+             .addChildren(new Menu('Video').setRoute('ui-video'))
+             .addChildren(new Menu('Panels').setRoute('ui-panel'))
+             .addChildren(new Menu('Tabs').setRoute('ui-tab'))
+             .addChildren(new Menu('Notifications & tooltips').setRoute('ui-notification'))
+             .addChildren(new Menu('Badges, Labels, Progress').setRoute('ui-label')),
           new Menu('Grid options', 'fa fa-laptop').setRoute('grid'),
-          new Menu('Tables', 'fa fa-table'),
-          new Menu('E-commerce', 'fa fa-shopping-cart'),
-          new Menu('Gallery', 'fa fa-picture-o'),
-          new Menu('Menu Levels', 'fa fa-sitemap'),
+          new Menu('Tables', 'fa fa-table')
+             .addChildren(new Menu('Static Tables').setRoute('table-static'))
+             .addChildren(new Menu('Data Tables').setRoute('table-data'))
+             .addChildren(new Menu('Foo Tables').setRoute('table-foo'))
+             .addChildren(new Menu('jqGrid').setRoute('table-grid')),
+          new Menu('E-commerce', 'fa fa-shopping-cart')
+             .addChildren(new Menu('Products grid').setRoute('commerce-grid'))
+             .addChildren(new Menu('Products list').setRoute('commerce-list'))
+             .addChildren(new Menu('Products edit').setRoute('commerce-edit'))
+             .addChildren(new Menu('Products detail').setRoute('commerce-detail'))
+             .addChildren(new Menu('Cart').setRoute('commerce-cart'))
+             .addChildren(new Menu('Orders').setRoute('commerce-order'))
+             .addChildren(new Menu('Credit Card form').setRoute('commerce-form')),
+          new Menu('Gallery', 'fa fa-picture-o')
+             .addChildren(new Menu('Lightbox Gallery').setRoute('gallery-lightboxt'))
+             .addChildren(new Menu('Slick Carousel').setRoute('gallery-slick'))
+             .addChildren(new Menu('Bootstrap Carousel').setRoute('gallery-bootstrap')),
+          new Menu('Menu Levels', 'fa fa-sitemap')
+             .addChildren(new Menu('Thrid Level')
+                .addChildren(new Menu('Thrid Level'))
+                .addChildren(new Menu('Thrid Level'))
+                .addChildren(new Menu('Thrid Level')))
+             .addChildren(new Menu('Second Level item'))
+             .addChildren(new Menu('Second Level item'))
+             .addChildren(new Menu('Second Level item')),
           new Menu('CSS Animations', 'fa fa-magic').setRoute('animation'),
           new Menu('Landing Page', 'fa fa-star').setRoute('index'),
           new Menu('Package', 'fa fa-database').setRoute('package'),

@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'miscellaneous-clipboard',
+    name: 'miscellaneou-spinner',
     head() {
       return {
-        title: 'Copy to clipboard'
+        title: 'Spinners'
       }
     }
   }

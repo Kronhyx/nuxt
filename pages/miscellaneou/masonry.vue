@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'miscellaneous-favicon',
+    name: 'miscellaneou-masonry',
     head() {
       return {
-        title: 'TinyIcon'
+        title: 'Masonry'
       }
     }
   }

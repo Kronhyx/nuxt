@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'miscellaneous-truncate',
+    name: 'miscellaneou-nestable',
     head() {
       return {
-        title: 'Truncate'
+        title: 'Nestable list'
       }
     }
   }

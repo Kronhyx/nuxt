@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'miscellaneous-timer',
+    name: 'miscellaneou-board',
     head() {
       return {
-        title: 'Idle timer'
+        title: 'Agile Board'
       }
     }
   }

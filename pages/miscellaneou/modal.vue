@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'miscellaneous-notification',
+    name: 'miscellaneou-modal',
     head() {
       return {
-        title: 'Toastr Notification'
+        title: 'Modal Window Editor'
       }
     }
   }

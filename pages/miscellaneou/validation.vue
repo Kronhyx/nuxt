@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'miscellaneous-board',
+    name: 'miscellaneou-validation',
     head() {
       return {
-        title: 'Agile Board'
+        title: 'Validation'
       }
     }
   }

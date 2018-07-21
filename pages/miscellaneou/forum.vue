@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'miscellaneous-chat',
+    name: 'miscellaneou-forum',
     head() {
       return {
-        title: 'Chat view'
+        title: 'Forum'
       }
     }
   }

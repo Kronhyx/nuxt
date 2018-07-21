@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'miscellaneous-masonry',
+    name: 'miscellaneou-map',
     head() {
       return {
-        title: 'Masonry'
+        title: 'Google Maps'
       }
     }
   }

@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'miscellaneous-loading',
+    name: 'miscellaneou-tour',
     head() {
       return {
-        title: 'Loading buttons'
+        title: 'Tour'
       }
     }
   }

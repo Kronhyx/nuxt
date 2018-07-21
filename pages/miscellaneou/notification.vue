@@ -1,13 +1,13 @@
 <template>
-  <div></div>
+  <div>TEST</div>
 </template>
 
 <script>
   export default {
-    name: 'ui-notifications',
+    name: 'miscellaneou-notification',
     head() {
       return {
-        title: 'Notifications'
+        title: 'Toastr Notification'
       }
     }
   }

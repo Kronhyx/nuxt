@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'miscellaneous-i18n',
+    name: 'miscellaneou-loading',
     head() {
       return {
-        title: 'i18n Support'
+        title: 'Loading buttons'
       }
     }
   }

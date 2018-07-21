@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'miscellaneous-spinners',
+    name: 'miscellaneou-alert',
     head() {
       return {
-        title: 'Spinners'
+        title: 'Sweet Alert'
       }
     }
   }

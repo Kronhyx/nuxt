@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'miscellaneous-alert',
+    name: 'miscellaneou-timer',
     head() {
       return {
-        title: 'Sweet Alert'
+        title: 'Idle timer'
       }
     }
   }

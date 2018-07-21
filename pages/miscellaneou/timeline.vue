@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'miscellaneous-diff',
+    name: 'miscellaneou-timeline',
     head() {
       return {
-        title: 'Diff'
+        title: 'Timeline v2'
       }
     }
   }

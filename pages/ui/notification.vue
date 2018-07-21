@@ -1,13 +1,13 @@
 <template>
-  <div>TEST</div>
+  <div></div>
 </template>
 
 <script>
   export default {
-    name: 'miscellaneous-modal',
+    name: 'ui-notification',
     head() {
       return {
-        title: 'Modal Window Editor'
+        title: 'Notifications'
       }
     }
   }
