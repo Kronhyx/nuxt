@@ -1,17 +1,17 @@
 <template>
-  <nuxt-link :tag="'li'" :to="item.route?item.route:'#'" :class="{active: isActive(item)}">
-    <a>
+  <li :class="{active: isActive(item)}">
+    <nuxt-link :to="item.route?item.route:'#'">
       <i :class="item.icon"></i>
       <span class="nav-label" v-text="item.text"></span>
       <span class="fa arrow" v-if="item.children && !item.badge"></span>
       <span class="label pull-right text-uppercase" v-if="item.badge" :class="'label-'+item.badge.class">
         {{ item.badge.text }}
       </span>
-    </a>
+    </nuxt-link>
     <ul class="nav nav-second-level collapse" :class="{in: isActive(item)}" v-if="item.children">
       <menu-nx v-for="(children,key) in item.children" :key="key" :item="children"/>
     </ul>
-  </nuxt-link>
+  </li>
 </template>
 
 <script>
@@ -31,9 +31,6 @@
         }).length : false;
         return route || child;
       }
-    },
-    data() {
-      return {}
     }
   }
 </script>

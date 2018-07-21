@@ -404,7 +404,7 @@
               },
               {
                 text: "Google maps",
-                route: {name: "miscellaneous-maps"}
+                route: {name: "miscellaneous-map"}
               },
               {
                 text: "Code editor",
