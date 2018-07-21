@@ -4,10 +4,10 @@
 
 <script>
   export default {
-    name: 'dashboard-dashboard1',
+    name: 'dashboard-dashboard3',
     head() {
       return {
-        title: 'Dashboard v1'
+        title: 'Dashboard v3'
       }
     }
   }

@@ -59,7 +59,27 @@
               {
                 text: 'Dashboard v1',
                 route: {name: 'dashboard'},
-              }
+              },
+              {
+                text: 'Dashboard v2',
+                route: {name: 'dashboard-dashboard2'},
+              },
+              {
+                text: 'Dashboard v3',
+                route: {name: 'dashboard-dashboard3'},
+              },
+              {
+                text: 'Dashboard v4',
+                route: {name: 'dashboard-dashboard4'},
+              },
+              {
+                text: 'Dashboard v5',
+                badge: {
+                  class: 'primary',
+                  text: 'new'
+                },
+                route: {name: 'dashboard-dashboard5'},
+              },
             ]
           },
           {
