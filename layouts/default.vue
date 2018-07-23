@@ -8,16 +8,16 @@
           <ul class="nav metismenu" id="side-menu">
             <li class="nav-header">
               <div class="dropdown profile-element">
-        <span>
-          <img alt="image" class="img-circle" src="../static/img/profile_small.jpg">
-        </span>
+                <span>
+                  <img alt="image" class="img-circle" src="../static/img/profile_small.jpg">
+                </span>
                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-          <span class="clear">
-            <span class="block m-t-xs">
-              <strong class="font-bold">David Williams</strong>
-            </span>
-            <span class="text-muted text-xs block">Art Director</span>
-          </span>
+                  <span class="clear">
+                    <span class="block m-t-xs">
+                      <strong class="font-bold">David Williams</strong>
+                    </span>
+                    <span class="text-muted text-xs block">Art Director</span>
+                  </span>
                 </a>
               </div>
               <div class="logo-element">IN+</div>
@@ -43,9 +43,9 @@
             </div>
             <ul class="nav navbar-top-links navbar-right">
               <li>
-                <a href="#">
+                <nuxt-link :to="{name: 'auth-login'}">
                   <i class="fa fa-sign-out"></i> Log out
-                </a>
+                </nuxt-link>
               </li>
             </ul>
 
@@ -216,5 +216,6 @@
   }
 </script>
 
-<style>
+<style scoped>
+
 </style>
