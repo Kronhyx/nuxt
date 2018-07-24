@@ -1,4 +1,7 @@
 module.exports = {
+  plugins: [
+    {src: '~plugins/path', ssr: true},
+  ],
   /*
   ** Headers of the page
   */
