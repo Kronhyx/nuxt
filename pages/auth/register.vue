@@ -23,7 +23,7 @@
       <p class="text-muted text-center">
         <small>Already have an account?</small>
       </p>
-      <nuxt-link class="btn btn-sm btn-white btn-block" :to="{name: 'auth-login'}">Login</nuxt-link>
+      <nuxt-link class="btn btn-sm btn-white btn-block" :to="path('auth-login')">Login</nuxt-link>
     </form>
     <p class="m-t">
       <small>Inspinia we app framework base on Bootstrap 3 &copy; 2014</small>

@@ -6,7 +6,7 @@
       Sorry, but the page you are looking for has note been found. Try checking the URL for error, then hit the refresh
       button on your browser or try found something else in our app.
       <form class="form-inline m-t" role="form">
-        <nuxt-link :to="{name: 'dashboard'}" class="btn btn-primary">Dashboard</nuxt-link>
+        <nuxt-link :to="path('dashboard')" class="btn btn-primary">Dashboard</nuxt-link>
       </form>
     </div>
   </div>

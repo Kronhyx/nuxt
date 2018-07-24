@@ -35,7 +35,7 @@
                   </p>
 
                   <p class="text-center m-t-md">
-                    <nuxt-link target="_blank" :to="{name: 'index'}" class="btn btn-primary">
+                    <nuxt-link target="_blank" :to="path('index')" class="btn btn-primary">
                       Live NuxtJs version
                     </nuxt-link>
                   </p>

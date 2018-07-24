@@ -43,7 +43,7 @@
             </div>
             <ul class="nav navbar-top-links navbar-right">
               <li>
-                <nuxt-link :to="{name: 'auth-login'}">
+                <nuxt-link :to="path('auth-login')">
                   <i class="fa fa-sign-out"></i> Log out
                 </nuxt-link>
               </li>

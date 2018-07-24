@@ -122,7 +122,7 @@
               <h4>NYS report new data!
                 <br/>
                 <small class="m-r">
-                  <nuxt-link :to="{name: 'graph-flot'}"> Check the stock price!</nuxt-link>
+                  <nuxt-link :to="path('graph-flot')"> Check the stock price!</nuxt-link>
                 </small>
               </h4>
             </div>
@@ -198,7 +198,7 @@
               <div class="feed-activity-list">
 
                 <div class="feed-element">
-                  <nuxt-link :to="{name: 'app-profile'}" class="pull-left">
+                  <nuxt-link :to="path('app-profile')" class="pull-left">
                     <img alt="image" class="img-circle" src="../../static/img/profile.jpg">
                   </nuxt-link>
                   <div class="media-body ">
@@ -210,7 +210,7 @@
                 </div>
 
                 <div class="feed-element">
-                  <nuxt-link :to="{name: 'app-profile'}" class="pull-left">
+                  <nuxt-link :to="path('app-profile')" class="pull-left">
                     <img alt="image" class="img-circle" src="../../static/img/a2.jpg">
                   </nuxt-link>
                   <div class="media-body ">
@@ -220,7 +220,7 @@
                   </div>
                 </div>
                 <div class="feed-element">
-                  <nuxt-link :to="{name: 'app-profile'}" class="pull-left">
+                  <nuxt-link :to="path('app-profile')" class="pull-left">
                     <img alt="image" class="img-circle" src="../../static/img/a3.jpg">
                   </nuxt-link>
                   <div class="media-body ">
@@ -230,7 +230,7 @@
                   </div>
                 </div>
                 <div class="feed-element">
-                  <nuxt-link :to="{name: 'app-profile'}" class="pull-left">
+                  <nuxt-link :to="path('app-profile')" class="pull-left">
                     <img alt="image" class="img-circle" src="../../static/img/a4.jpg">
                   </nuxt-link>
                   <div class="media-body ">
@@ -244,7 +244,7 @@
                   </div>
                 </div>
                 <div class="feed-element">
-                  <nuxt-link :to="{name: 'app-profile'}" class="pull-left">
+                  <nuxt-link :to="path('app-profile')" class="pull-left">
                     <img alt="image" class="img-circle" src="../../static/img/a5.jpg">
                   </nuxt-link>
                   <div class="media-body ">
@@ -262,7 +262,7 @@
                   </div>
                 </div>
                 <div class="feed-element">
-                  <nuxt-link :to="{name: 'app-profile'}" class="pull-left">
+                  <nuxt-link :to="path('app-profile')" class="pull-left">
                     <img alt="image" class="img-circle" src="../../static/img/profile.jpg">
                   </nuxt-link>
                   <div class="media-body ">
@@ -272,7 +272,7 @@
                   </div>
                 </div>
                 <div class="feed-element">
-                  <nuxt-link :to="{name: 'app-profile'}" class="pull-left">
+                  <nuxt-link :to="path('app-profile')" class="pull-left">
                     <img alt="image" class="img-circle" src="../../static/img/a7.jpg">
                   </nuxt-link>
                   <div class="media-body ">

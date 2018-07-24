@@ -119,7 +119,7 @@
               <h4>NYS report new data!
                 <br/>
                 <small class="m-r">
-                  <nuxt-link :to="{name: 'graph-flot'}"> Check the stock price!</nuxt-link>
+                  <nuxt-link :to="path('graph-flot')"> Check the stock price!</nuxt-link>
                 </small>
               </h4>
             </div>

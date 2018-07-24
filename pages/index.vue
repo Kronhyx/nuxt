@@ -10,7 +10,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <nuxt-link :to="{name: 'dashboard'}" class="navbar-brand">Dashboard</nuxt-link>
+            <nuxt-link :to="path('dashboard')" class="navbar-brand">Dashboard</nuxt-link>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
